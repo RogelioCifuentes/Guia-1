@@ -53,7 +53,7 @@ public class ArticuloDAO {
         try{
             statement = conexion.getConexion().createStatement();
             psInsertar = conexion.getConexion().prepareStatement("UPDATE articulo SET stock= ? WHERE Id = ?");
-
+//comentario random
             if(o.getStock()<numeroVendido){
                 throw new StockException("No hay stock disponible");
             }else{
